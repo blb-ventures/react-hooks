@@ -1,5 +1,5 @@
 {
-  "name": "react-hooks",
+  "name": "@blb-ventures/react-hooks",
   "version": "0.0.0-development",
   "description": "",
   "main": "./lib/cjs/index.js",
