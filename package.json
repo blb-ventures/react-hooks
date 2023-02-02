@@ -1,8 +1,9 @@
 {
   "name": "@blb-ventures/react-hooks",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "",
   "main": "./lib/cjs/index.js",
+  "types": "./lib/cjs/types/index.d.ts",
   "files": [
     "lib/**/*"
   ],
