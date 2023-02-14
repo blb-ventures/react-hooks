@@ -10,12 +10,6 @@ module.exports = [
         format: 'es',
         sourcemap: false,
       },
-      {
-        file: 'lib/index.umd.js',
-        name: 'BLBVenturesReactHooks',
-        format: 'umd',
-        sourcemap: false,
-      },
     ],
     plugins: [
       typescript({
@@ -23,5 +17,6 @@ module.exports = [
         sourceMap: false,
       }),
     ],
+    external: ['react'],
   },
 ];
