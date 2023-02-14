@@ -1,5 +1,4 @@
-export * from './use-dialogs';
-export * from './use-dynamic-load';
-export * from './use-event';
-export * from './use-polling';
-export * from './use-window-size';
+import * as mod from './external';
+export * from './external';
+export { mod as reactHooks };
+export default mod;
