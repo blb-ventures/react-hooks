@@ -5,17 +5,10 @@ This repo contains a collection of commonly used react hooks
 ## Installation
 
 ```sh
-<<<<<<< HEAD
 npm install @blb-ventures/react-hooks       # npm
 yarn add @blb-ventures/react-hooks          # yarn
 bun add @blb-ventures/react-hooks           # bun
 pnpm add @blb-ventures/react-hooks          # pnpm
-=======
-npm install zod       # npm
-yarn add zod          # yarn
-bun add zod           # bun
-pnpm add zod          # pnpm
->>>>>>> 8ee7f60ab7dd3ffcb97d26248cfc4dce672fb7b6
 ```
 
 ## Hooks
