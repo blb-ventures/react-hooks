@@ -32,6 +32,9 @@ module.exports = {
   settings: {
     'import/extensions': ['.ts', '.tsx', 'd.ts'],
     'import/ignore': ['node_modules', '\\.(coffee|scss|css|less|hbs|svg|json)$'],
+    'react': {
+      version: 'detect',
+    },
   },
   rules: {
     ...typescriptRecommended.rules,
