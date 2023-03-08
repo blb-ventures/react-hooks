@@ -7,7 +7,9 @@ const importPlugin = require('eslint-plugin-import');
 const jsxA11yPlugin = require('eslint-plugin-jsx-a11y');
 const prettierPlugin = require('eslint-plugin-prettier');
 const typescriptPlugin = require('@typescript-eslint/eslint-plugin');
-const typescriptRecommended = require('@typescript-eslint/eslint-plugin/dist/configs/recommended-requiring-type-checking');
+const typescriptRecommended = require('@typescript-eslint/eslint-plugin/dist/configs/recommended');
+const typescriptRecommendedType = require('@typescript-eslint/eslint-plugin/dist/configs/recommended-requiring-type-checking');
+const typescriptStrict = require('@typescript-eslint/eslint-plugin/dist/configs/strict');
 const reactRecommended = require('eslint-plugin-react/configs/recommended');
 const typescriptParser = require('@typescript-eslint/parser');
 
@@ -38,6 +40,8 @@ module.exports = {
   },
   rules: {
     ...typescriptRecommended.rules,
+    ...typescriptRecommendedType.rules,
+    ...typescriptStrict.rules,
     ...reactRecommended.rules,
     'prettier/prettier': 'error',
     '@typescript-eslint/no-unsafe-argument': 'off',
