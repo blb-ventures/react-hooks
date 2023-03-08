@@ -15,7 +15,7 @@ export const useEvent = <EventType>(
     };
     if (eventTarget == null) {
       setEventValue(null);
-      return () => {};
+      return undefined;
     }
     eventTarget.addEventListener(eventName, handleProgress);
     return () => eventTarget.removeEventListener(eventName, handleProgress);

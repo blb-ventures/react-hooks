@@ -8,12 +8,10 @@ export const useDynamicLoad = <T extends string>(
   const [load, setLoad] = useState<Partial<Record<T, boolean>>>(initialLoad);
   const openComponent = (component: T) => {
     setOpen(component);
-    if (component != null) {
-      setLoad(prevState => ({
-        ...prevState,
-        [component]: true,
-      }));
-    }
+    setLoad(prevState => ({
+      ...prevState,
+      [component]: true,
+    }));
   };
 
   return {

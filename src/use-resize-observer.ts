@@ -9,6 +9,7 @@ export const useResizeObserver = (
 ) => {
   useEffect(() => {
     const isClient = typeof window === 'object';
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
     if (isClient && window.ResizeObserver) {
       const setObserve = () => {
         if (ref.current != null) {
@@ -23,7 +24,7 @@ export const useResizeObserver = (
         });
       });
       setObserve();
-    } else if (options != null && options.fallback) {
+    } else if (options?.fallback != null) {
       const handleResize = () => {
         const { width, height } = ref.current.getBoundingClientRect();
         callback(width, height);
@@ -33,6 +34,6 @@ export const useResizeObserver = (
         window.removeEventListener('resize', handleResize);
       };
     }
-    return () => {};
+    return undefined;
   }, [ref, callback, options]);
 };
