@@ -8,7 +8,7 @@ export const useEvent = <EventType>(
   const [eventValue, setEventValue] = useState<EventType | null>(null);
   useEffect(() => {
     const handleProgress = (e: Event) => {
-      if (e instanceof CustomEvent<EventType>) {
+      if (e instanceof CustomEvent) {
         callback?.(e.detail);
         setEventValue(e.detail);
       }
